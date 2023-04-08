@@ -93,7 +93,7 @@ const Other = styled.div`
 `
 const ImageWrap = styled.div`
   aspect-ratio: 1 / 1;
-  width: 100%;
+  width: 512px;
   background-image: url(UppereliteMain.png);
   border-radius: 16px;
 `
@@ -618,7 +618,7 @@ const Home = (props: HomeProps) => {
                   </IconRow>
                 </InfoRow>
                 <CollectionDescription>You are one step closer to the Upper Elites & The 1%.
-                 Elite collectibles may or may not unlock more on your journey, that's for you to find out.</CollectionDescription>
+                 Elite collectibles may or may not unlock more on your journey, that&lsquos for you to find out.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
