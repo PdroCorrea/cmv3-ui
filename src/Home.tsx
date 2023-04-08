@@ -98,8 +98,8 @@ const ImageWrap = styled.div`
   border-radius: 16px;
 `
 const Image = styled.div`
-  height: 100%
-  width: 100%;
+  height: 120%
+  width: 120%;
 `
 const CollectionName = styled.h1`
   font-weight: 800;
@@ -618,7 +618,7 @@ const Home = (props: HomeProps) => {
                   </IconRow>
                 </InfoRow>
                 <CollectionDescription>You are one step closer to the Upper Elites & The 1%.
-                 Elite collectibles may or may not unlock more on your journey, that&lsquos for you to find out.</CollectionDescription>
+                 Elite collectibles may or may not unlock more on your journey, that&apos;s for you to find out.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
