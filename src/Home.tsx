@@ -94,7 +94,7 @@ const Other = styled.div`
 const ImageWrap = styled.div`
   aspect-ratio: 1 / 1;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/2832432/pexels-photo-2832432.png);
+  background-image: url(UppereliteMain.png);
   border-radius: 16px;
 `
 const Image = styled.div`
@@ -103,7 +103,7 @@ const Image = styled.div`
 `
 const CollectionName = styled.h1`
   font-weight: 800;
-  font-size: 64px;
+  font-size: 60px;
   line-height: 100%;
   color: var(--white);
 
@@ -401,7 +401,7 @@ const Home = (props: HomeProps) => {
   }, [wallet, connection]);
 
   useEffect(() => {
-    if (mintedItems?.length === 0) throwConfetti();
+    if (mintedItems?.length > 0) throwConfetti();
   }, [mintedItems]);
 
   const openOnSolscan = useCallback((mint) => {
@@ -598,7 +598,7 @@ const Home = (props: HomeProps) => {
             </Column>
             <Column>
               <Content>
-                <CollectionName>Collection Name</CollectionName>
+                <CollectionName>Elite Collectibles</CollectionName>
                 <InfoRow>
                 {guardStates.isStarted && wallet.publicKey && (
                   <InfoBox>
@@ -612,12 +612,13 @@ const Home = (props: HomeProps) => {
                   </InfoBox>
                 )}
                   <IconRow>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Globe></Globe></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
+                    <a href="https://upperelites.com" target="_blank" rel="noopener noreferrer"><Globe></Globe></a>
+                    <a href="https://twitter.com/UpperEliteDAO" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
+                    <a href="https://discord.gg/upperelites" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
                   </IconRow>
                 </InfoRow>
-                <CollectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</CollectionDescription>
+                <CollectionDescription>You are one step closer to the Upper Elites & The 1%.
+                 Elite collectibles may or may not unlock more on your journey, that's for you to find out.</CollectionDescription>
               </Content>
               <Other>
                 {!guardStates.isStarted ? (
